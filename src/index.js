@@ -12,7 +12,7 @@ const runGame = (ruleOfTheGame, startGame) => {
   console.log(ruleOfTheGame);
 
   for (let i = 0; i < quantityOfRounds; i += 1) {
-    const [question, correctAnswer] = startGame;
+    const [question, correctAnswer] = startGame();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('You answer: ');
     if (correctAnswer === userAnswer) {

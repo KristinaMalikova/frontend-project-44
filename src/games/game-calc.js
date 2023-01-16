@@ -8,8 +8,6 @@ const ruleOfTheGame = 'What is the result of the expression?';
 // Используемые параметры
 const operators = ['+', '-', '*'];
 
-const getRandomOperator = () => Math.floor(Math.random() * 3);
-
 const getCorrectAnswer = (firstOperand, operator, secondOperand) => {
   switch (operator) {
     case '+':
@@ -24,12 +22,12 @@ const getCorrectAnswer = (firstOperand, operator, secondOperand) => {
 };
 
 const startGame = () => {
-  const firstRandomOperand = getRandomNumber();
-  const secondRandomOperand = getRandomNumber();
-  const randomOperator = operators[getRandomOperator()];
+  const firstRandomOperand = getRandomNumber(1, 50);
+  const secondRandomOperand = getRandomNumber(1, 50);
+  const randomOperator = operators[getRandomNumber(0, 2)];
   const question = `${firstRandomOperand} ${randomOperator} ${secondRandomOperand}`;
   const correctAnswer = getCorrectAnswer(firstRandomOperand, randomOperator, secondRandomOperand);
-  return [question, correctAnswer];
+  return [question, String(correctAnswer)];
 };
 
 export default () => {

@@ -13,11 +13,11 @@ const getDiviser = (firstNumber, secondNumber) => {
 };
 
 const startGame = () => {
-  const firtsRandomNumber = getRandomNumber();
-  const secondRandomNumber = getRandomNumber();
+  const firtsRandomNumber = getRandomNumber(1, 50);
+  const secondRandomNumber = getRandomNumber(1, 50);
   const question = `${firtsRandomNumber} ${secondRandomNumber}`;
   const correctAnswer = getDiviser(firtsRandomNumber, secondRandomNumber);
-  return [question, correctAnswer];
+  return [question, String(correctAnswer)];
 };
 
 export default () => {

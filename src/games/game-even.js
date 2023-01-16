@@ -8,7 +8,7 @@ const ruleOfTheGame = 'Answer "yes" if the number is even, otherwise answer "no"
 const isEven = (randomNumber) => randomNumber % 2 === 0;
 
 const startGame = () => {
-  const question = getRandomNumber();
+  const question = getRandomNumber(1, 50);
   const correctAnswer = isEven(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
