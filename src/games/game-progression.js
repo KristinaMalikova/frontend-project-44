@@ -2,13 +2,9 @@ import runGame from '../index.js';
 
 import getRandomNumber from '../randomFunction.js';
 
-// Правило игры
 const ruleOfTheGame = 'What number is missing in the progression?';
 
-// Используемые параметры
 const progressionLength = 10;
-
-// Функция арифметической прогрессии
 
 const makeProgression = (startNumber, lengthStep, progresLength) => {
   const progression = [];

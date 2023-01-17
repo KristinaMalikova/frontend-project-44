@@ -1,7 +1,6 @@
 #!/usr/src/env node
 import readlineSync from 'readline-sync';
 
-// Используемые параметры
 const quantityOfRounds = 3;
 
 const runGame = (ruleOfTheGame, startGame) => {

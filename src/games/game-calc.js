@@ -2,10 +2,8 @@ import runGame from '../index.js';
 
 import getRandomNumber from '../randomFunction.js';
 
-// Правило игры
 const ruleOfTheGame = 'What is the result of the expression?';
 
-// Используемые параметры
 const operators = ['+', '-', '*'];
 
 const getCorrectAnswer = (firstOperand, operator, secondOperand) => {

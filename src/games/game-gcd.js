@@ -2,7 +2,6 @@ import runGame from '../index.js';
 
 import getRandomNumber from '../randomFunction.js';
 
-// Правило игры
 const ruleOfTheGame = 'Find the greatest common divisor of given numbers.';
 
 const getDiviser = (firstNumber, secondNumber) => {
