@@ -3,84 +3,64 @@
 
 <a href="https://codeclimate.com/github/KristinaMalikova/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/3bc1091d57000c3979f1/maintainability" /></a>
 
-BRAIN-CALC GAME
-{"version": 2, "width": 122, "height": 34, "timestamp": 1673970430, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
-[0.020738, "o", "\u001b[?2004h\u001b]0;kristina@kristina: ~/frontend-project-44\u0007\u001b[01;32mkristina@kristina\u001b[00m:\u001b[01;34m~/frontend-project-44\u001b[00m$ "]
-[1.621196, "o", "b"]
-[1.979396, "o", "r"]
-[2.207468, "o", "a"]
-[2.615724, "o", "i"]
-[2.9035, "o", "n"]
-[3.391868, "o", "-"]
-[4.341701, "o", "c"]
-[4.655201, "o", "a"]
-[5.132564, "o", "l"]
-[5.570464, "o", "c"]
-[6.33854, "o", "\r\n\u001b[?2004l\r"]
-[8.561382, "o", "Welcome to the Brain Games!\r\n"]
-[8.567437, "o", "May I have your name?  "]
-[12.537701, "o", "K"]
-[13.398883, "o", "r"]
-[13.716106, "o", "i"]
-[14.120885, "o", "s"]
-[14.368513, "o", "t"]
-[14.682653, "o", "i"]
-[15.032945, "o", "n"]
-[15.48172, "o", "a"]
-[16.470874, "o", "\r\n"]
-[16.47189, "o", "Hello, Kristina!\r\n"]
-[16.472126, "o", "What is the result of the expression?\r\n"]
-[16.472596, "o", "Question: 29 - 46\r\n"]
-[16.472833, "o", "You answer: "]
-[29.770548, "o", "-"]
-[30.245893, "o", "1"]
-[32.184578, "o", "7"]
-[32.660541, "o", "\r\n"]
-[32.661424, "o", "Correct!\r\n"]
-[32.661664, "o", "Question: 40 * 44\r\n"]
-[32.661844, "o", "You answer: "]
-[53.47711, "o", "1"]
-[54.000304, "o", "7"]
-[54.194891, "o", "6"]
-[54.998376, "o", "0"]
-[56.221821, "o", "\r\nCorrect!\r\nQuestion: 25 * 48\r\nYou answer: "]
-[60.65601, "o", "1"]
-[60.841024, "o", "2"]
-[61.409, "o", "0"]
-[61.593938, "o", "0"]
-[63.088806, "o", "\r\n"]
-[63.089336, "o", "Correct!\r\n"]
-[63.090101, "o", "Congratulations, Kristina!\r\n"]
-[63.102492, "o", "\u001b[?2004h"]
-[63.103111, "o", "\u001b]0;kristina@kristina: ~/frontend-project-44\u0007\u001b[01;32mkristina@kristina\u001b[00m:\u001b[01;34m~/frontend-project-44\u001b[00m$ "]
-[66.021899, "o", "brain-calc"]
-[67.531009, "o", "\r\n\u001b[?2004l\r"]
-[67.614162, "o", "Welcome to the Brain Games!\r\n"]
-[67.616814, "o", "May I have your name?  "]
-[69.411542, "o", "K"]
-[69.786955, "o", "r"]
-[70.794801, "o", "i"]
-[71.146727, "o", "s"]
-[71.391581, "o", "t"]
-[71.782874, "o", "i"]
-[72.097568, "o", "n"]
-[72.459332, "o", "a"]
-[73.004301, "o", "\r\n"]
-[73.005199, "o", "Hello, Kristina!\r\n"]
-[73.005429, "o", "What is the result of the expression?\r\n"]
-[73.00573, "o", "Question: 18 * 34\r\n"]
-[73.005939, "o", "You answer: "]
-[80.161071, "o", "6"]
-[80.562269, "o", "1"]
-[81.470021, "o", "2"]
-[82.477675, "o", "\r\n"]
-[82.4785, "o", "Correct!\r\n"]
-[82.478741, "o", "Question: 36 + 15\r\n"]
-[82.478871, "o", "You answer: "]
-[89.744864, "o", "5"]
-[90.201958, "o", "0"]
-[90.8316, "o", "\r\n"]
-[90.831994, "o", "50 is wrong answer ;(. Correct answer was 51.\r\n"]
-[90.832218, "o", "Let's try again, Kristina!\r\n"]
-[90.843437, "o", "\u001b[?2004h\u001b]0;kristina@kristina: ~/frontend-project-44\u0007\u001b[01;32mkristina@kristina\u001b[00m:\u001b[01;34m~/frontend-project-44\u001b[00m$ "]
-[96.217039, "o", "\u001b[?2004l\r\r\nexit\r\n"]
+### Welcome to the Brain Games!
+
+### Description: 
+
+Brain-games is a set of five console games built on the principle of popular mobile applications for brain pumping. Each game asks questions that need to be answered correctly. After three correct answers, the game will be over. Incorrect answers end the game and offer to play game again.
+
+### Install
+git clone git@github.com:KristinaMalikova/frontend-project-44.git
+make install 
+make lint 
+
+### BRAIN-CALC GAME
+
+Calculator. Arithmetic expressions that need to be calculated.
+
+Run the game
+brain-calc
+
+Example of a game:
+https://asciinema.org/a/552299
+
+### BRAIN-EVEN GAME
+
+Definition of an even number.
+
+Run the game
+brain-even
+
+Example of a game:
+https://asciinema.org/a/552313
+
+### BRAIN-PRIME
+
+Definition of a prime number.
+
+Run the game
+brain-prime
+
+Example of a game:
+https://asciinema.org/a/552314
+
+### BRAIN-GCD
+
+Determination of the greatest common divisor.
+
+Run the game
+brain-gcd
+
+Example of a game:
+https://asciinema.org/a/552322
+
+### BRAIN-PROGRESSION
+
+Progression. Search for missing numbers in a sequence of numbers.
+
+Run the game
+brain-progression
+
+Example of a game:
+https://asciinema.org/a/552323
+
