@@ -2,11 +2,11 @@ import runGame from '../index.js';
 
 import getRandomNumber from '../randomFunction.js';
 
-const ruleOfTheGame = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
-const getCorrectAnswer = (firstOperand, operator, secondOperand) => {
+const calculate = (firstOperand, operator, secondOperand) => {
   switch (operator) {
     case '+':
       return firstOperand + secondOperand;
@@ -19,15 +19,15 @@ const getCorrectAnswer = (firstOperand, operator, secondOperand) => {
   }
 };
 
-const startGame = () => {
+const getQuestionAndAnswer = () => {
   const firstRandomOperand = getRandomNumber(1, 50);
   const secondRandomOperand = getRandomNumber(1, 50);
   const randomOperator = operators[getRandomNumber(0, 2)];
   const question = `${firstRandomOperand} ${randomOperator} ${secondRandomOperand}`;
-  const correctAnswer = getCorrectAnswer(firstRandomOperand, randomOperator, secondRandomOperand);
+  const correctAnswer = calculate(firstRandomOperand, randomOperator, secondRandomOperand);
   return [question, String(correctAnswer)];
 };
 
 export default () => {
-  runGame(ruleOfTheGame, startGame);
+  runGame(description, getQuestionAndAnswer);
 };
